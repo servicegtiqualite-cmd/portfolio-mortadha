@@ -1,0 +1,375 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortadha Badri | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+line-height:1.6;
+}
+
+:root{
+--gold:#d4af37;
+--dark:#0d0d0d;
+--gray:#1c1c1c;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:1.5rem;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:1.1rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:var(--gold);
+color:black;
+font-weight:600;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+color:var(--gold);
+margin-bottom:50px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:50px;
+align-items:center;
+}
+
+.profile{
+width:280px;
+height:280px;
+border-radius:50%;
+border:4px solid var(--gold);
+object-fit:cover;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:var(--gray);
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border:1px solid var(--gold);
+}
+
+.card h3{
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill{
+background:var(--gray);
+padding:20px;
+border-radius:10px;
+}
+
+.progress{
+height:8px;
+background:#333;
+border-radius:10px;
+margin-top:10px;
+overflow:hidden;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:var(--gold);
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:1.1rem;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.profile{
+margin:auto;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="hero">
+
+<h1>MORTADHA BADRI</h1>
+
+<h2>Superviseur Qualité | Construction Métallique | Génie Mécanique</h2>
+
+<p>
+Professionnel spécialisé dans le contrôle qualité,
+la construction métallique, l’usinage et l’amélioration
+continue des processus industriels.
+</p>
+
+<a href="#contact" class="btn">Me Contacter</a>
+
+</div>
+</header>
+
+<section id="about">
+
+<h2 class="section-title">À Propos</h2>
+
+<div class="about">
+
+<img src="photo.jpg" class="profile">
+
+<div>
+
+<p>
+Diplômé d’un Master de Recherche en Génie Mécanique et Ingénierie.
+Actuellement Superviseur Qualité dans le domaine de la construction
+métallique et de l’usinage.
+</p>
+
+<br>
+
+<p>
+Mon expertise couvre le contrôle qualité, le suivi de fabrication,
+la réception des ouvrages, l’analyse technique et l’amélioration
+continue des performances industrielles.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Expériences Professionnelles</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Superviseur Qualité</h3>
+<p>
+Contrôle qualité, suivi de fabrication,
+réception des ouvrages métalliques,
+gestion des non-conformités et amélioration continue.
+</p>
+</div>
+
+<div class="card">
+<h3>Projet Master - Abaqus</h3>
+<p>
+Simulation et modélisation du comportement mécanique
+de l’emboutissage de tôle en aluminium.
+</p>
+</div>
+
+<div class="card">
+<h3>Projet GCT</h3>
+<p>
+Étude et conception d’une unité de broyage
+et de criblage du nitrate agricole.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Compétences</h2>
+
+<div class="skills">
+
+<div class="skill">
+AutoCAD
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+SolidWorks
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+Abaqus
+<div class="progress"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+Revit
+<div class="progress"><span style="width:80%"></span></div>
+</div>
+
+<div class="skill">
+Gestion Qualité
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+Construction Métallique
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="card-grid">
+
+<div class="card">CSWA - SOLIDWORKS</div>
+<div class="card">CSWP - SOLIDWORKS</div>
+<div class="card">Six Sigma White Belt</div>
+<div class="card">IBM Design Thinking</div>
+<div class="card">REVIT Certification</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Réalisations</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Construction Métallique</h3>
+<p>Suivi qualité et réception d’ouvrages industriels.</p>
+</div>
+
+<div class="card">
+<h3>Contrôle Peinture</h3>
+<p>Métré, calcul des surfaces et conformité des travaux.</p>
+</div>
+
+<div class="card">
+<h3>Usinage</h3>
+<p>Contrôle dimensionnel et conformité des fabrications.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>📧 Badrim89@gmail.com</p>
+<p>📱 +216 52 820 879</p>
+<p>📍 Tunisie</p>
+<p>💼 LinkedIn : linkedin.com/in/badri-mortadha</p>
+
+</section>
+
+<footer>
+
+© 2026 Mortadha Badri - Portfolio Professionnel
+
+</footer>
+
+</body>
+</html>
+```
